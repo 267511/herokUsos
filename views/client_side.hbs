@@ -1,0 +1,44 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HerokUsos</title>
+	<style>
+		input, button {
+        	min-width: 72px;
+       		min-height: 36px;
+        	border: 1px solid grey;
+      	}
+      	label, input, button {
+        	display: block;
+      	}
+      	input {
+        	margin-bottom: 1em;
+      	}
+	footer {
+	}
+	</style>
+
+	<script type="text/javascript">
+                function szukajOsoby(){
+                        var imie = document.getElementById("imie").value;
+
+                        location.href = "http://localhost:3000" + "?imie=" + imie;
+                }
+    </script>
+
+</head>
+<body>
+	<h1>HerokUsos</h1>
+
+	<form id="form1" action="/szukaj" method="get"> 
+                <input type="text" id="imie" name="Imię"></input>
+                <input type="submit" value="Szukaj"></input>
+    </form>
+
+<footer>
+ <p>Copyrights {{nowYear}} </p>
+</footer>
+
+</body>
+</html>
+
